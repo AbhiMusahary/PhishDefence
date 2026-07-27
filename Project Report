@@ -1,0 +1,285 @@
+# **INTERNSHIP PROJECT REPORT**
+
+## **Phishing Awareness Kit**
+
+**Submitted By:**
+**Name:** Abhinish Musahary
+**Course:** Bachelor of Technology (B.Tech) – Computer Science and Engineering
+**Organization:** Denver EduGrow
+**Project Title:** Phishing Awareness Kit
+**Technologies Used:** React.js, Node.js
+
+# Acknowledgement
+
+I sincerely express my gratitude to **Denver EduGrow** for providing me with the opportunity to work on this internship project. The internship helped me gain practical knowledge of cybersecurity concepts and modern web development using React and Node.js.
+
+I also thank my mentors and faculty members for their continuous guidance, valuable suggestions, and encouragement throughout the development of this project.
+
+---
+
+# Abstract
+
+Cybercrime is increasing rapidly, and phishing remains one of the most common methods used by attackers to steal confidential information such as usernames, passwords, banking credentials, and personal data.
+
+The **Phishing Awareness Kit** is an educational web application developed to improve users' awareness of phishing attacks. The application allows users to learn how phishing works, practice identifying phishing emails through quizzes, experience a simulated fake login page in a safe environment, and understand how to protect themselves from online scams.
+
+The project was developed using **React.js** for the frontend and **Node.js** for the backend.
+
+---
+
+# Table of Contents
+
+1. Introduction
+2. Problem Statement
+3. Objectives
+4. Scope of the Project
+5. Technologies Used
+6. System Architecture
+7. Modules
+8. Implementation
+9. Testing
+10. Results
+11. Future Enhancements
+12. Conclusion
+13. References
+
+---
+
+# Chapter 1: Introduction
+
+Phishing is a cyberattack technique where attackers impersonate trusted organizations through emails, websites, or messages to steal sensitive information.
+
+Many internet users fail to recognize phishing attempts because they are designed to appear legitimate. Therefore, cybersecurity awareness is essential.
+
+The Phishing Awareness Kit provides an interactive platform where users can learn cybersecurity concepts through practical demonstrations and quizzes.
+
+---
+
+# Chapter 2: Problem Statement
+
+Many people:
+
+* Cannot distinguish between legitimate and phishing emails.
+* Enter passwords on fake websites.
+* Are unaware of common phishing techniques.
+* Become victims of identity theft and financial fraud.
+
+There is a need for an educational platform that helps users recognize phishing attacks before they become victims.
+
+---
+
+# Chapter 3: Objectives
+
+The primary objectives of the project are:
+
+* To educate users about phishing attacks.
+* To test users' phishing detection skills.
+* To demonstrate how fake login pages work.
+* To improve cybersecurity awareness.
+* To provide interactive learning using quizzes and examples.
+
+---
+
+# Chapter 4: Scope of the Project
+
+The project can be used by:
+
+* Schools
+* Colleges
+* Corporate organizations
+* Cybersecurity awareness campaigns
+* Beginners learning cybersecurity
+
+The system is intended for educational purposes only and does not perform real phishing attacks.
+
+---
+
+# Chapter 5: Technologies Used
+
+## Frontend
+
+* React.js
+* HTML5
+* CSS3
+* JavaScript
+
+## Backend
+
+* Node.js
+* Express.js
+
+## Development Tools
+
+* Visual Studio Code
+* Git
+* GitHub
+* Google Chrome
+
+---
+
+# Chapter 6: System Architecture
+
+**User**
+
+↓
+
+**React Frontend**
+
+↓
+
+**Node.js Backend**
+
+↓
+
+**Quiz & Educational Content**
+
+↓
+
+**User Results and Awareness Feedback**
+
+---
+
+# Chapter 7: Modules
+
+## 1. Awareness Website
+
+This module provides educational content explaining:
+
+* What phishing is
+* Types of phishing attacks
+* Common warning signs
+* Prevention techniques
+* Best cybersecurity practices
+
+---
+
+## 2. Phishing Quiz
+
+The quiz evaluates users' understanding of phishing.
+
+Features:
+
+* Multiple-choice questions
+* Instant score calculation
+* Performance feedback
+* Awareness improvement
+
+---
+
+## 3. Fake Login Demo
+
+This module demonstrates how attackers imitate genuine login pages.
+
+Purpose:
+
+* Educational demonstration only
+* Shows why users should verify website URLs
+* Teaches secure login practices
+
+---
+
+## 4. Email Examples
+
+This section contains examples of:
+
+* Genuine emails
+* Phishing emails
+
+Users learn to identify:
+
+* Suspicious links
+* Urgent language
+* Fake sender addresses
+* Grammar mistakes
+* Unexpected attachments
+
+---
+
+# Chapter 8: Implementation
+
+The frontend was developed using React.js to create an interactive and responsive interface.
+
+The backend was developed using Node.js and Express.js to manage quiz functionality and application logic.
+
+The project follows a modular structure, making it easy to maintain and extend.
+
+---
+
+# Chapter 9: Testing
+
+The project was tested to verify:
+
+| Test Case                         | Result |
+| --------------------------------- | ------ |
+| Website loads successfully        | Passed |
+| Navigation works correctly        | Passed |
+| Quiz functions correctly          | Passed |
+| Fake login demo displays properly | Passed |
+| Email examples load correctly     | Passed |
+| Responsive design                 | Passed |
+
+---
+
+# Chapter 10: Results
+
+The project successfully achieved its objectives.
+
+Users were able to:
+
+* Understand phishing attacks.
+* Identify phishing emails.
+* Practice recognizing fake login pages.
+* Improve their phishing detection skills through quizzes.
+* Learn safe online browsing practices.
+
+---
+
+# Chapter 11: Future Enhancements
+
+Future improvements include:
+
+* AI-powered phishing email detection.
+* Real-time URL safety checker.
+* User accounts and progress tracking.
+* Leaderboard for quiz performance.
+* Mobile application.
+* Additional cybersecurity awareness modules.
+* Multi-language support.
+* Admin dashboard for quiz management.
+
+---
+
+# Chapter 12: Conclusion
+
+The **Phishing Awareness Kit** is an educational cybersecurity platform developed to increase awareness about phishing attacks.
+
+The application combines theory with practical demonstrations through quizzes, fake login simulations, awareness materials, and phishing email examples. It provides users with the knowledge required to identify phishing attempts and practice safe online behavior.
+
+This internship project strengthened practical skills in React.js, Node.js, web development, and cybersecurity awareness while highlighting the importance of educating users against modern cyber threats.
+
+---
+
+# References
+
+1. OWASP Foundation
+2. Cybersecurity and Infrastructure Security Agency (CISA)
+3. National Institute of Standards and Technology (NIST)
+4. React.js Official Documentation
+5. Node.js Official Documentation
+6. Express.js Documentation
+7. Mozilla Developer Network (MDN)
+
+---
+
+# Learning Outcomes
+
+During this internship, I learned:
+
+* React.js development
+* Node.js backend development
+* REST API basics
+* Cybersecurity fundamentals
+* Phishing awareness techniques
+* Secure web application development
+* Problem-solving and debugging
+* Project documentation and reporting
