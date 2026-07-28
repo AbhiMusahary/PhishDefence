@@ -1288,6 +1288,27 @@ export default function App() {
     setMobileNavOpen(false);
   };
 
+    return (
+    <div style={{ fontFamily: "'Inter', sans-serif" }}>
+      <style>{GLOBAL_STYLES}</style>
+      <div ref={scrollRef} onScroll={handleScroll} className="h-screen overflow-y-auto bg-slate-950 text-slate-300 scroll-smooth">
+        <ProgressBar progress={progress} />
+        <NavBar active={active} onNav={scrollToSection} open={mobileNavOpen} setOpen={setMobileNavOpen} />
+        <div ref={heroRef}><Hero onNav={scrollToSection} /></div>
+        <div ref={simRef}><Simulator /></div>
+        <div ref={playbookRef}><Playbook /></div>
+        <div ref={quizRef}><Quiz openModal={setModal} /></div>
+        <div ref={taxonomyRef}><Taxonomy openModal={setModal} /></div>
+        <div ref={resourcesRef}><Resources openModal={setModal} /></div>
+      </div>
+      <PrintableModal open={!!modal} onClose={() => setModal(null)}>
+        {modal?.type === "certificate" && <CertificateCard name={modal.name} pct={modal.pct} />}
+        {modal?.type === "cheatsheet" && <CheatSheetCard item={modal.item} />}
+        {modal?.type === "resource" && <ResourceDocCard item={modal.item} />}
+      </PrintableModal>
+    </div>
+  );
+}
 
 
 
