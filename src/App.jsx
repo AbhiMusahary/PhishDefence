@@ -8,9 +8,6 @@ import {
   Package, Target, Layers, BookOpen,
 } from "lucide-react";
 
-/* ------------------------------------------------------------------ */
-/* Global styles: fonts + print isolation                              */
-/* ------------------------------------------------------------------ */
 
 const GLOBAL_STYLES = `
   @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
@@ -23,9 +20,7 @@ const GLOBAL_STYLES = `
   }
 `;
 
-/* ------------------------------------------------------------------ */
-/* Data                                                                 */
-/* ------------------------------------------------------------------ */
+
 
 const NAV_ITEMS = [
   { id: "hero", label: "Dashboard", icon: Activity },
@@ -325,9 +320,8 @@ const FAQS = [
   { q: "How often should I run this training?", a: "This portal is built for a quick pass each quarter, with the threat simulator and quiz useful anytime you want a refresher before a high-risk period, like tax season or major company announcements." },
 ];
 
-/* ------------------------------------------------------------------ */
-/* Small shared components                                             */
-/* ------------------------------------------------------------------ */
+
+
 
 function useCountUp(target, duration = 1400) {
   const [value, setValue] = useState(0);
@@ -435,9 +429,7 @@ function DetailPanel({ detail }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Nav + progress bar                                                   */
-/* ------------------------------------------------------------------ */
+
 
 function ProgressBar({ progress }) {
   return (
@@ -495,9 +487,8 @@ function NavBar({ active, onNav, open, setOpen }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Page 1 \u2014 Hero & dashboard                                          */
-/* ------------------------------------------------------------------ */
+
+
 
 const METRIC_TEXT = {
   emerald: "text-emerald-400",
@@ -569,9 +560,6 @@ function Hero({ onNav }) {
 }
 
 
-/* ------------------------------------------------------------------ */
-/* Page 2 \u2014 Threat simulator                                          */
-/* ------------------------------------------------------------------ */
 
 function EmailMock({ activeSpot, setActiveSpot }) {
   return (
@@ -726,9 +714,7 @@ function Simulator() {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Page 3 \u2014 Incident response playbook                                */
-/* ------------------------------------------------------------------ */
+
 
 function Playbook() {
   const [open, setOpen] = useState(1);
@@ -796,9 +782,8 @@ function Playbook() {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Page 4 \u2014 Quiz                                                       */
-/* ------------------------------------------------------------------ */
+
+
 
 function CertificateCard({ name, pct }) {
   return (
@@ -934,9 +919,7 @@ function Quiz({ openModal }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Page 5 \u2014 Taxonomy                                                   */
-/* ------------------------------------------------------------------ */
+
 
 function CheatSheetCard({ item }) {
   const Icon = item.icon;
@@ -1017,9 +1000,8 @@ function Taxonomy({ openModal }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Page 6 \u2014 Resource hub, terminal, FAQ, footer                        */
-/* ------------------------------------------------------------------ */
+
+
 
 function ResourceDocCard({ item }) {
   const Icon = item.icon;
@@ -1228,9 +1210,9 @@ function Resources({ openModal }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Printable modal                                                     */
-/* ------------------------------------------------------------------ */
+
+
+
 
 function PrintableModal({ open, onClose, children }) {
   if (!open) return null;
@@ -1257,9 +1239,8 @@ function PrintableModal({ open, onClose, children }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* App                                                                  */
-/* ------------------------------------------------------------------ */
+
+
 
 export default function App() {
   const scrollRef = useRef(null);
@@ -1298,8 +1279,7 @@ export default function App() {
         if (dist < minDist) { minDist = dist; current = id; }
       }
     });
-    if (current) setActive(current);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    if (current) setActive(current)
   }, []);
 
   const scrollToSection = (id) => {
@@ -1308,24 +1288,6 @@ export default function App() {
     setMobileNavOpen(false);
   };
 
-  return (
-    <div style={{ fontFamily: "'Inter', sans-serif" }}>
-      <style>{GLOBAL_STYLES}</style>
-      <div ref={scrollRef} onScroll={handleScroll} className="h-screen overflow-y-auto bg-slate-950 text-slate-300 scroll-smooth">
-        <ProgressBar progress={progress} />
-        <NavBar active={active} onNav={scrollToSection} open={mobileNavOpen} setOpen={setMobileNavOpen} />
-        <div ref={heroRef}><Hero onNav={scrollToSection} /></div>
-        <div ref={simRef}><Simulator /></div>
-        <div ref={playbookRef}><Playbook /></div>
-        <div ref={quizRef}><Quiz openModal={setModal} /></div>
-        <div ref={taxonomyRef}><Taxonomy openModal={setModal} /></div>
-        <div ref={resourcesRef}><Resources openModal={setModal} /></div>
-      </div>
-      <PrintableModal open={!!modal} onClose={() => setModal(null)}>
-        {modal?.type === "certificate" && <CertificateCard name={modal.name} pct={modal.pct} />}
-        {modal?.type === "cheatsheet" && <CheatSheetCard item={modal.item} />}
-        {modal?.type === "resource" && <ResourceDocCard item={modal.item} />}
-      </PrintableModal>
-    </div>
-  );
-}
+
+
+
