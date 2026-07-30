@@ -10,7 +10,9 @@ If you'd like to see the project in action, simply click the link below:
 
 **🔗 https://abhinishmusahary.netlify.app**
 
-💻 Run Locally 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+##💻 Run Locally 
 
 If you want to access and run this project on your local machine, follow these steps: 
 
