@@ -10,8 +10,25 @@ If you'd like to see the project in action, simply click the link below:
 
 **🔗 https://abhinishmusahary.netlify.app**
 
-I hope you enjoy exploring the project. If you have any feedback, suggestions, or ideas for improvement, feel free to share them. Your input is always appreciated!
+💻 Run Locally 
 
+If you want to access and run this project on your local machine, follow these steps: 
+
+📥 Clone the Repository 
+
+```bash git clone https://github.com/your-username/your-repository-name.git ``` 
+
+📦 Install Dependencies 
+
+npm install 
+
+▶️ Start the Development Server Run the project locally with: 
+
+npm run dev 
+
+After running the command, open the local URL shown in the terminal 
+
+http://localhost:5173 in your browser. 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
